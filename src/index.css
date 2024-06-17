@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+#root {
+  position: relative;
+  background-color: rgb(201, 255, 205);
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+audio {
+  display: none;
+}
+
+.board {
+  background-color: rgba(145, 206, 255, 0.74);
+  width: 80%;
+  max-height: 60%;
+  max-width: 700px;
+  min-width: 420px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track{
+  background: rgba(0, 119, 255, 0);
+  border-radius: 100vw;
+  margin-block: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(16, 111, 255);
+  border-radius: 100vw;
+}
+
+.board:hover {
+  transition: 200ms;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header {
+  position: relative;
+  margin: 10px 20px 10px 20px;
+  display: flex;
+}
+
+header input,
+button {
+  position: relative;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+header input {
+  width: 80%;
+}
+
+header button {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 20%;
+}
+
+header input:hover {
+  transition: 200ms;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header button:hover {
+  transition: 200ms;
+  background-color: rgb(48, 138, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul {
+  overflow: none;
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+ul li{
+  position: relative;
+  background-color: rgba(90, 167, 230, 0.123);
+  border-radius: 5px;
+  margin: 10px 20px 10px 20px;
+  padding: 5px 5px 5px 10px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none!important;
+}
+
+ul li:hover {
+  transition: 200ms;
+  background-color: rgb(90, 167, 230);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul li p {
+  overflow: hidden;
+  width: 500px;
+}
+
+ul li div i{
+  padding: 5px;
+  margin: 3px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  user-select: none;
+}
+
+ul li div i:hover {
+  transition: 200ms;
+  color: rgb(179, 231, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
